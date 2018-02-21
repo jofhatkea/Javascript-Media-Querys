@@ -1,6 +1,6 @@
 
 function myFunction() {
-    let state=null;
+    let state=null;//keep track on which state we were in the last time
     var counter = -1;
     var exchangeContainer = document.querySelector("#exchangeContainer");
     var transferContainer = document.querySelector('#transferContainer');
@@ -17,14 +17,14 @@ function myFunction() {
     resize();//call it once manually for the initial setup
 
     function mobile(){
-        if(state!="mobile"){
+        if(state!="mobile"){//We only do stuff if the state has changed (so we don't keep adding eventlisteners)
             console.log("mobile");
             document.body.style.backgroundColor="yellow";
             exchangeContainer.addEventListener("click", chooseExchange);
             transferContainer.addEventListener("click", chooseTransfer);
             exchangeText.classList.add("closeText");
             transferText.classList.add("closeText");
-            state="mobile";
+            state="mobile";//changing the "state"
         }
     }
     function desktop(){
