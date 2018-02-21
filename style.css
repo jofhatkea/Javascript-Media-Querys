@@ -1,0 +1,435 @@
+/*////////GENERAL//////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway:300');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+
+nav {
+    text-align: right;
+    font-size: 14pt;
+    max-height: 0;
+    min-height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+}
+
+#burger {
+    font-size: 20pt;
+    padding: 20px;
+}
+
+input:checked~nav {
+    max-height: 90%;
+    min-height: 90%;
+    opacity: 0.9;
+}
+
+nav ul {
+    margin: 0;
+    padding: 40px;
+    list-style: none;
+}
+
+nav ul li {
+    /*display: inline-block;*/
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:active {
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 120px;
+}
+
+h1 {
+    font-size: 19pt;
+    letter-spacing: 1px;
+    line-height: 32pt;
+    margin: 0 0 20px 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poiret One', cursive;
+}
+
+h4 {
+    font-size: 14pt;
+}
+
+h3 {
+    font-size: 14pt;
+    margin: /*0.5em 0 0.5em*/ 0;
+}
+
+h2 {
+    font-size: 14pt;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+footer {
+    display: block;
+    padding: 20px;
+}
+
+footer p, footer h4 {
+    margin: 0.4em 0 0.4em 0;
+}
+
+/*///////FRONTPAGE///////*/
+
+#boxesFrontpageContainer {
+    margin: 4vw;
+    min-height: 500px;
+    position: relative;
+}
+
+.boxesFrontpage {
+    position: absolute;
+    height: auto;
+    padding: 20px;
+}
+
+#headerFrontBox {
+    color: white;
+    background-color: #6a8d73;
+    width: 60vw;
+    height: auto;
+    top: 100px;
+    left: 6vw;
+    box-shadow: 2px 2px 14px rgba(68,68,68,0.6);
+    opacity: 0.9;
+    outline: 2px solid white;
+    outline-offset: -6vw;
+    padding: 10vw;
+}
+
+#imgFrontBox {
+    display: none;
+    top: 10vw;
+    right: 4vw;
+    z-index: -1;
+    padding: 0;
+}
+
+#imageFront {
+    width: 44vw;
+    box-shadow: 2px 2px 14px rgba(68,68,68,0.6);
+}
+
+#contentFrontBox {
+    display: none;
+    background-color: #75A1A4;
+    top: 27vw;
+    width: 450px;
+    box-shadow: 2px 2px 14px rgba(68,68,68,0.6);
+    z-index: -1;
+    opacity: 0.85;
+    padding: 90px 40px 40px 40px;
+}
+
+#contentFront {
+    font-size: 17pt;
+    font-family: 'Raleway', sans-serif;
+    line-height: 32pt;
+    margin: 0;
+}
+
+
+/*/////LAYOUT//////*/
+
+/*///////////CONTENT///////////*/
+
+/*/////////////TRANSFER AND EXCHANGE////////////////*/
+
+    #transferExchangeContainer {
+        margin: 30px;
+    }
+
+    #transferContainer {
+        background-color: #6A8D73;
+        padding: 30px;
+        color: white;
+        margin: 0.5em 0 0.5em 0;
+        opacity: 0.8;
+        box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+    }
+
+    #exchangeContainer {
+        background-color: #75A1A4;
+        padding: 30px;
+        color: white;
+        margin: 0.5em 0 0.5em 0;
+        opacity: 0.8;
+        box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+    }
+
+    .openText{
+       display: block;
+    }
+    .closeText{
+        display: none;
+    }
+
+
+/*/////////////GENERAL INFORMATIONS//////////////*/
+
+    #informationsContainer {
+        margin: 30px;
+    }
+
+    #info1, #info3{
+        background-color: #6A8D73;
+        padding: 30px;
+        color: white;
+        margin: 0.5em 0 0.5em 0;
+        opacity: 0.8;
+        box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+    }
+    #info2, #info4{
+        background-color: #75A1A4;
+        padding: 30px;
+        color: white;
+        margin: 0.5em 0 0.5em 0;
+        opacity: 0.8;
+        box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+    }
+
+
+/*//////// DESKTOP ////////*/
+
+@media only screen and (min-width:1025px) {
+
+    /*-------NAVIGATION--------*/
+    nav {
+        min-height: 126px;
+        /*max-height: 130px;*/
+        font-size: 11pt;
+        top: 0;
+        background: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 50px 28px 20px 28px;
+        /*text-align: right*/
+    }
+
+    #logo {
+        top: 34px;
+        left: 30px;
+        width: 160px;
+    }
+
+    #active {
+        color: white;
+        background-color: rgba(106,141,115,0.4);
+        padding: 80px 28px 20px 28px;
+        box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+    }
+
+    .weRhere {
+        color: white;
+    }
+
+    /*------FRONT PAGE--------*/
+
+    h1 {
+        font-size: 32pt;
+        letter-spacing: 2px;
+        line-height: 38pt;
+        padding: 0 0 40px 0;
+    }
+
+    h2 {
+        font-size: 20pt;
+    }
+
+    #boxesFrontpageContainer {
+        margin: 126px 8vw 8vw 8vw;
+        height: 580px; /*is it needed?*/
+    }
+
+    #headerFrontBox {
+        width: 430px; /*ath px*/
+        top: 60px;
+        left: 21vw;
+        outline-offset: -40px;
+        padding: 80px;
+    }
+
+    #imgFrontBox {
+        display: block; /*block?*/
+    }
+
+    #imageFront {
+        width: 360px; /*needed?*/
+    }
+
+    #contentFrontBox {
+        display: block; /*block?*/
+    }
+
+
+    /*----------LAYOUT-----------*/
+
+        /*__________TRANSFER_________*/
+        #transferExchangeContainer {
+            margin: 140px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50%);
+        }
+
+        .transferExchange {
+            width: auto;
+        }
+
+        #transferContainer {
+            background-color: #6A8D73;
+            opacity: 0.8;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+            margin: 0.5em;
+        }
+
+        #exchangeContainer{
+            background-color: #75A1A4;
+            opacity: 0.8;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+            margin: 0.5em;
+        }
+
+
+        /*_________GENERAL RULES_________*/
+
+        .informations {
+            width: auto;
+        }
+
+        #informationsContainer {
+            margin: 140px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50%);
+        }
+
+        /*.hidetext {
+            display: none;
+        }*/
+
+        #info1{
+            background-color: #6A8D73;
+            opacity: 0.8;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+            margin: 0.5em;
+        }
+
+        #info2 {
+            background-color: #75A1A4;
+            opacity: 0.8;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+            margin: 0.5em;
+        }
+
+        #info3 {
+            background-color: #75A1A4;
+            opacity: 0.8;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+            margin: 0.5em;
+        }
+        #info4 {
+            background-color: #6A8D73;
+            opacity: 0.8;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+            margin: 0.5em;
+        }
+
+        /*_______SIDE MENU_________*/
+        .sideMenu {
+            position: absolute;
+            top: 116px;
+            left: 0;
+            background-color: #75A1A4;
+            opacity: 0.85;
+            width: 19vw;
+            min-height: 85vh;
+            box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+        }
+        .sideMenu h3 {
+            margin: 65px 30px 65px 30px;
+        }
+
+        /*_________CONTENT________*/
+        .textDesktop {
+            position: relative;
+            top: 116px;
+            color: black;
+            opacity: 0.8;
+            width: 79vw;
+            min-height: 85vh;
+            left: 19vw;
+            outline: 2px solid black;
+            outline-offset: -4vw;
+        }
+
+        .textDesktop h1 {
+            padding: 8vw 8vw 1vw 8vw;
+            margin: 0;
+        }
+
+        .textDesktop h2 {
+            padding: 1vw 8vw 1vw 8vw;
+            margin: 0;
+        }
+
+        .textDesktop ul {
+            padding: 1vw 8vw 1vw 10vw;
+            margin: 0;
+        }
+
+        .textDesktop p {
+            padding: 1vw 8vw 1vw 8vw;
+            margin: 0;
+        }
+
+        /*_______FOOTER_______*/
+        footer {
+            position: absolute;
+            top: 100%;
+        }
+
+}

@@ -1,0 +1,196 @@
+/*////////GENERAL//////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway:300');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    text-align: right;
+    font-size: 11pt;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 50px 28px 20px 28px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:active {
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    width: 160px;
+}
+
+#listlogo {
+    padding: 0;
+}
+
+h1 {
+    font-size: 32pt;
+    letter-spacing: 2px;
+    line-height: 38pt;
+    padding: 4vw 4vw 0 4vw;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poiret One', cursive;
+}
+
+h4 {
+    font-size: 14pt;
+}
+
+h2 {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2vw;
+    margin: 0;
+}
+
+footer {
+    /*background-color: rgba(106,141,115,0.6);*/
+    display: block;
+    padding: 20px;
+}
+
+footer p, footer h4 {
+    margin: 0.4em 0 0.4em 0;
+}
+
+#active {
+    color: white;
+    background-color: rgba(106,141,115,0.4);
+    padding: 80px 28px 20px 28px;
+    box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+}
+
+.weRhere {
+    color: white;
+}
+
+/*///////FRONTPAGE///////*/
+
+#boxesFrontpageContainer {
+    margin: 4vw 8vw 8vw 8vw;
+    height: 550px;
+    position: relative;
+}
+
+.boxesFrontpage {
+    position: absolute;
+    height: auto;
+    padding: 20px;
+}
+
+#contentFrontBox {
+    background-color: #75A1A4;
+    top: 25vw;
+    width: 450px;
+    box-shadow: 2px 2px 14px rgba(68,68,68,0.6);
+    z-index: -1;
+    opacity: 0.85;
+    padding: 90px 40px 40px 40px;
+}
+
+#imgFrontBox {
+    top: 6vw;
+    right: 4vw;
+    z-index: -1;
+}
+
+#imageFront {
+    width: 360px;
+    box-shadow: 2px 2px 14px rgba(68,68,68,0.6);
+}
+
+#headerFrontBox {
+    color: white;
+    background-color: #6a8d73;
+    width: 550px;
+    height: 384px;
+    left: 21vw;
+    box-shadow: 2px 2px 14px rgba(68,68,68,0.6);
+    opacity: 0.9;
+    outline: 2px solid white;
+    outline-offset: -3vw;
+}
+
+h3 {
+    font-size: 14pt;
+    margin: 0.5em 0 0.5em 0;
+}
+
+#contentFront {
+    font-size: 18pt;
+    line-height: 32pt;
+    margin: 0;
+}
+
+
+/*////////////SIDE MENU///////////*/
+
+#sideMenu {
+    position: absolute;
+    left: 0;
+    background-color: #6a8d73;
+    opacity: 0.85;
+    width: 19vw;
+    min-height: 85vh;
+    box-shadow: 2px 2px 6px rgba(68,68,68,0.4);
+}
+
+#sideMenu h3 {
+    margin: 65px 30px 65px 30px;
+}
+
+
+/*///////////CONTENT///////////*/
+
+#content {
+    position: relative;
+    color: black;
+    opacity: 0.8;
+    width: 79vw;
+    min-height: 85vh;
+    left: 19vw;
+    outline: 2px solid black;
+    outline-offset: -4vw;
+}
+
+#content h1 {
+    padding: 8vw 8vw 1vw 8vw;
+    margin: 0;
+}
+
+#content h2 {
+    padding: 1vw 8vw 1vw 8vw;
+    margin: 0;
+}
+
+#content ul {
+    padding: 1vw 8vw 1vw 10vw;
+    margin: 0;
+}
+
+#content p {
+    padding: 1vw 8vw 8vw 8vw;
+    margin: 0;
+}
