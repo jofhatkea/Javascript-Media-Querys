@@ -1,16 +1,51 @@
+
 function myFunction() {
-    if (window.matchMedia("(min-width: 700px)").matches) {
-        document.body.style.backgroundColor="yellow";
+    let state=null;
+    var counter = -1;
+    var exchangeContainer = document.querySelector("#exchangeContainer");
+    var transferContainer = document.querySelector('#transferContainer');
+    var exchangeText = document.querySelector('#exchangeText');
+    var transferText = document.querySelector('#transferText');
+    window.addEventListener("resize", resize);
+    function resize(){
+        if (window.matchMedia("(max-width: 700px)").matches) {
+            mobile();
+        } else {
+            desktop();
+        }
+    }
+    resize();//call it once manually for the initial setup
 
-        var counter = -1;
-        var exchangeContainer = document.querySelector("#exchangeContainer");
-        var transferContainer = document.querySelector('#transferContainer');
-        var exchangeText = document.querySelector('#exchangeText');
-        var transferText = document.querySelector('#transferText');
+    function mobile(){
+        if(state!="mobile"){
+            console.log("mobile");
+            document.body.style.backgroundColor="yellow";
+            exchangeContainer.addEventListener("click", chooseExchange);
+            transferContainer.addEventListener("click", chooseTransfer);
+            exchangeText.classList.add("closeText");
+            transferText.classList.add("closeText");
+            state="mobile";
+        }
+    }
+    function desktop(){
+        if(state!="desktop"){
+            console.log("desktop");
+            document.body.style.backgroundColor="none";
+            exchangeContainer.removeEventListener("click", chooseExchange);
+            transferContainer.removeEventListener("click", chooseTransfer);
+            exchangeText.classList.remove("closeText");
+            transferText.classList.remove("closeText");
+            state="desktop";
+        }
+    }
+    
+        
+        
+
+        
 
 
-        exchangeContainer.addEventListener("click", chooseExchange);
-        transferContainer.addEventListener("click", chooseTransfer);
+        
 
 
 
@@ -55,10 +90,7 @@ function myFunction() {
             }
         }
 
-    }
-    else {
-
-    }
+    
 
 }
 
